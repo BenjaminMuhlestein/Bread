@@ -14,3 +14,7 @@
 | DELETE | `/places/:id` | Delete a place |
 | POST | `/places/:id/rant` | Add rant to a place |
 | DELETE | `/places/:id/rant/:rantId` | Delete a rant |
+
+
+# Code used
+## had to use code from one of the examples because the part the code provided did'nt work. 
