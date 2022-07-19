@@ -11,7 +11,11 @@ let places = [{
       cuisines: 'Coffee, Bakery',
       pic: '/images/coffee-cat.jpg'
   }]
-
+  
+  router.get('/new', (req, res) => {
+    res.render('places/new')
+  })
+  
   function index (data) {
     let placesFormatted = data.places.map((place) => {
         return (
