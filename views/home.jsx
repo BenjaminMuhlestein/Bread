@@ -1,9 +1,15 @@
 const React = require('react')
 const Def = require('./default')
 
-function Def (html) {
+
+
+
+
+function home () {
     return (
-        <html>
+        <Def>
+        
+            <main>
             <head>
                 <title>Title</title>
                 /* BOOTSTRAP CDN LINK (long) */
@@ -12,16 +18,6 @@ function Def (html) {
             <body>
                 {html.children}
             </body>
-        </html>
-    )
-}
-
-module.exports = Def
-
-function home () {
-    return (
-        <Def>
-            <main>
                 <h1>HOME1</h1>
                 <div>
                   <img src="images/drink.jpg" alt="Chia Fruit Shake" />
