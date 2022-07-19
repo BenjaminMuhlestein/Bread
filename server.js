@@ -10,11 +10,11 @@ app.engine('jsx', require('express-react-views').createEngine())
 app.use(express.static('public'))
 
 // Controllers & Routes
-app.use('/places', require('./controllers/places'))
 
 app.get('/', (req, res) => {
     res.render('home')
-})
+    })
+    app.use('/places', require('./controllers/places'))
 
 app.get('*', (req, res) => {
     res.render('error404')
@@ -22,6 +22,11 @@ app.get('*', (req, res) => {
 
 // Listen for Connections
 app.listen(process.env.PORT)
+//Sending and Receiving Your Form Data
+app.use(express.urlencoded({ extended: true }))
+
+
+
 
 
 
