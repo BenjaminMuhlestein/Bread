@@ -1,3 +1,6 @@
+app.use(express.urlencoded({ extended: true }))
+
+
 const React = require('react')
 const Def = require('../default')
   // Modules and Globals
